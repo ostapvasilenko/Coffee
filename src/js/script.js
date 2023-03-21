@@ -21,3 +21,6 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   navMenu.classList.remove("active");
 //   Need to add Toggle aria-expanded value here as well because it stays as true when you click a menu item
 }))
+
+
+
