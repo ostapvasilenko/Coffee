@@ -1,6 +1,12 @@
 .discover {
     margin-top: 100px;
 
+    &__effect {
+        position: absolute;
+        margin-top: 300px;
+    }
+
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -8,6 +14,7 @@
     }
 
     &__info {
+        position: relative;
 
         h2 {
             font-weight: 700;
@@ -19,7 +26,7 @@
         p {
             font-size: 20px;
             line-height: 34px;
-            color: #707070;
+            color: #ca7d0a;
             max-width: 585px;
             margin: 30px 0px;
         }
@@ -51,6 +58,11 @@
             width: 400px;
             height: 400px;
         }
+        &__effect {
+            margin-top: 250px;
+            min-width: 400px;
+            max-height: 200px;
+        }
     }
 
     @media screen and(max-width:992px) {
@@ -76,6 +88,11 @@
             width: 300px;
             height: 300px;
         }
+        &__effect {
+            margin-top: 150px;
+            min-width: 400px;
+            max-height: 200px;
+        }
     }
 
     @media screen and(max-width:768px) {
@@ -89,6 +106,14 @@
 
         &__img {
             display: none;
+        }
+    }
+
+    @media screen and(max-width:576px) {
+        &__effect {
+            margin-top: 70px;
+            min-width: 100px;
+            max-height: 200px;
         }
     }
 }
