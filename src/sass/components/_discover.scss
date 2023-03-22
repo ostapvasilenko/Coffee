@@ -107,6 +107,11 @@
         &__img {
             display: none;
         }
+        &__effect {
+            margin-top: 50px;
+            min-width: 100px;
+            max-height: 200px;
+        }
     }
 
     @media screen and(max-width:576px) {

@@ -1,0 +1,167 @@
+.menu {
+    h2 {
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 72px;
+        color: #603809;
+        margin-bottom: 16px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 34px;
+        text-align: center;
+        color: #707070;
+    }
+
+    &__card {
+        background: #FFF9F1;
+        border: 1px solid rgba(249, 192, 106, 0.42);
+        padding-bottom: 42px;
+        position: relative;
+        margin-top: 32px;
+        transition: 0.5s all;
+
+
+        img {
+            width: 100%;
+        }
+
+        h4 {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 29px;
+            color: #603809;
+            text-align: center;
+            margin-top: 14px;
+            margin-bottom: 6px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 21px;
+            text-align: center;
+            color: #1E1E1E;
+            margin-bottom: 6px;
+        }
+
+        h5 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            color: #603809;
+        }
+
+        span {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            position: absolute;
+            bottom: -22px;
+            font-weight: 700;
+            font-size: 16px;
+            color: #1E1E1E;
+            padding: 14px 28px;
+            background: #F9C06A;
+            box-shadow: 0px 6px 12px rgba(249, 192, 106, 0.22);
+            border-radius: 24px;
+            border: none;
+        }
+    }
+
+    &__card:hover {
+        transform: scale(1.1);
+        transition: 0.5s all;
+    }
+
+    @media screen and(max-width:992px) {
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        &__card {
+            padding-bottom: 25px;
+
+            h4 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            button {
+                padding: 10px 18px;
+                font-size: 14px;
+                bottom: -18px;
+            }
+        }
+    }
+
+    @media screen and(max-width:768px) {
+        h2 {
+            font-size: 34px;
+           
+        }
+
+        &__card {
+          margin-top: 48px;
+          padding-bottom: 32px;
+
+            h4 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            button {
+                padding: 14px 28px;
+                font-size: 16px;
+                bottom: -22px;
+            }
+        }
+    }
+
+    @media screen and(max-width:576px) {
+        h2 {
+            font-size: 30px;
+            line-height: 1.2em;
+        }
+        p{
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        &__card {
+          margin-top: 48px;
+          padding-bottom: 32px;
+
+            h4 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            button {
+                padding: 14px 28px;
+                font-size: 16px;
+                bottom: -22px;
+            }
+        }
+    }
+}
