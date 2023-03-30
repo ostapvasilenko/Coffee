@@ -24,3 +24,14 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 
 
 
+
+
+let swiper = new Swiper(".mySwiper", {
+  rewind: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+
