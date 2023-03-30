@@ -23,7 +23,7 @@
     height: 100%;
     margin-top: 45px;
     cursor: pointer;
-    
+
   }
 
   .swiper-slide {
@@ -97,18 +97,19 @@
 
   }
 
-  &__img{
+  &__img {
     position: absolute;
     right: 0;
     top: -30px;
     z-index: 2;
 
-    &_last{
+    &_last {
       position: absolute;
       bottom: -50px;
       z-index: 1;
     }
   }
+
   @media screen and(max-width:992px) {
     & {
       margin-top: 52px;
@@ -128,11 +129,12 @@
       margin-top: 30px;
     }
   }
+
   @media screen and(max-width:800px) {
-    &__img{
+    &__img {
       display: none;
-  
-      &_last{
+
+      &_last {
         display: none;
       }
     }
