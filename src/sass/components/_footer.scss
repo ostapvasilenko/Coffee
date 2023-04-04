@@ -1,0 +1,130 @@
+.footer {
+    background: #442808;
+    width: 100%;
+    padding: 72px 0px 30px;
+    position: relative;
+
+    &__main_img {
+        height: 400px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+        filter: brightness(50%)
+    }
+
+    a {
+        font-family: 'Clicker Script';
+        font-size: 54px;
+        line-height: 71px;
+        color: #FFFFFF;
+        text-decoration: none;
+        z-index: 10;
+        position: relative;
+        z-index: 3;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF;
+        margin: 20px 0px;
+        max-width: 380px;
+        position: relative;
+        z-index: 3;
+    }
+
+    &__img {
+        a {
+            :first-child {
+                margin-right: 20px;
+            }
+
+            line-height: 25px;
+            position: relative;
+            z-index: 3;
+        }
+    }
+
+    h3 {
+        margin-top: 15px;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 35px;
+        color: #FFFFFF;
+        position: relative;
+        z-index: 3;
+    }
+
+    ul {
+        margin-top: 28px;
+
+        li {
+            list-style: none;
+
+            a {
+                font-family: 'Playfair Display';
+                font-size: 18px;
+                line-height: 42px;
+                color: #FFFFFF;
+                position: relative;
+                z-index: 3;
+            }
+        }
+    }
+
+    .accordion {
+        position: relative;
+        z-index: 9999;
+    }
+
+    .accordion-body {
+        background-color: #442808;
+    }
+
+    &__menu_mobile {
+        display: none;
+    }
+
+    @media screen and(max-width:992px) {
+        &__menu {
+            display: none;
+        }
+
+        &__menu_mobile {
+            display: block;
+        }
+
+        &__info {
+            text-align: center;
+
+            p {
+                max-width: none;
+            }
+        }
+
+        .accordion {
+            margin-top: 30px;
+        }
+
+        .accordion-item {
+            ul {
+                margin-top: 15px;
+
+                li {
+                    padding-left: 10px;
+
+                    a {
+                        color: #442808;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:992px) {
+        & {
+            padding: 30px 0px;
+        }
+    }
+}
