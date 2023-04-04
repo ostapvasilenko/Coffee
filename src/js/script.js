@@ -24,7 +24,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 
 
 
-
+/* Swiper slider */
 
 let swiper = new Swiper(".mySwiper", {
   rewind: true,
@@ -34,4 +34,28 @@ let swiper = new Swiper(".mySwiper", {
   },
 });
 
+/* Scroll buttons */
 
+
+let ButtonHero = document.getElementById("btn_hero");
+
+ButtonHero.addEventListener("click", function() {
+  var element = document.getElementById("menu");
+  element.scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+
+let ButtonWhyWe = document.getElementById("why-we_btn");
+
+ButtonWhyWe.addEventListener("click", function() {
+  var element = document.getElementById("header");
+  element.scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+
+let ButtonImage = document.getElementById("image_btn");
+
+ButtonImage.addEventListener("click", function() {
+  var element = document.getElementById("menu");
+  element.scrollIntoView({ behavior: "smooth", block: "start" });
+});
