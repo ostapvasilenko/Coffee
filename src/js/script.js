@@ -19,7 +19,7 @@ hamburger.addEventListener("click", () => {
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
-//   Need to add Toggle aria-expanded value here as well because it stays as true when you click a menu item
+  //   Need to add Toggle aria-expanded value here as well because it stays as true when you click a menu item
 }))
 
 
@@ -39,7 +39,7 @@ let swiper = new Swiper(".mySwiper", {
 
 let ButtonHero = document.getElementById("btn_hero");
 
-ButtonHero.addEventListener("click", function() {
+ButtonHero.addEventListener("click", function () {
   var element = document.getElementById("menu");
   element.scrollIntoView({ behavior: "smooth", block: "start" });
 });
@@ -47,7 +47,7 @@ ButtonHero.addEventListener("click", function() {
 
 let ButtonWhyWe = document.getElementById("why-we_btn");
 
-ButtonWhyWe.addEventListener("click", function() {
+ButtonWhyWe.addEventListener("click", function () {
   var element = document.getElementById("header");
   element.scrollIntoView({ behavior: "smooth", block: "start" });
 });
@@ -55,7 +55,7 @@ ButtonWhyWe.addEventListener("click", function() {
 
 let ButtonImage = document.getElementById("image_btn");
 
-ButtonImage.addEventListener("click", function() {
+ButtonImage.addEventListener("click", function () {
   var element = document.getElementById("menu");
   element.scrollIntoView({ behavior: "smooth", block: "start" });
 });
