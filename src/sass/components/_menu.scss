@@ -79,6 +79,65 @@
         transition: 0.5s all;
     }
 
+    .modal {
+        display: none;
+
+        h2 {
+            color: #603809;
+        }
+
+        h3 {
+            font-size: 26px;
+            color: #603809;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 21px;
+            text-align: center;
+            color: #603809;
+            margin-bottom: 15px;
+        }
+
+        h5 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            color: #603809;
+        }
+
+        button {
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 700;
+            font-size: 16px;
+            color: #FFF9F1;
+            padding: 14px 28px;
+            background: #603809;
+            box-shadow: 0px 6px 12px rgba(249, 192, 106, 0.22);
+            border-radius: 24px;
+            border: none;
+        }
+    }
+
+    /* Показати модальне вікно, коли клас "open" додається до елемента */
+    .modal.open {
+        display: block;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #F9C06A;
+        width: 60%;
+        height: 300px;
+        border-radius: 30px;
+    }
+
     @media screen and(max-width:992px) {
 
         h2 {

@@ -29,11 +29,11 @@
   <div class="header__form-wrapper">
     <div class="header__registration_form">
       <h2 class="text-center">Registration</h2>
-      <form>
-        <input type="text" placeholder="Name" pattern="[A-Za-z]+">
-        <input type="text" placeholder="SurName" pattern="[A-Za-z]+">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
+      <form onsubmit="return validateForm()">
+        <input type="text" placeholder="Name" id="name" pattern="[A-Za-z]+">
+        <input type="text" placeholder="SurName" id="surname" pattern="[A-Za-z]+">
+        <input type="email" placeholder="Email" id="email">
+        <input type="password" placeholder="Password" id="password">
         <button class="header__btn" type="submit">SignUp!</button>
       </form>
     </div>

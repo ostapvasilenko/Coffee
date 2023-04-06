@@ -11,7 +11,8 @@
                     <h4>Cappuccino</h4>
                     <p>Coffee 50% | Milk 50%</p>
                     <h5>$8.50</h5>
-                    <span><button>Order Now</button></span>
+                    <span><button class="buy-btn" data-product="Cappuccino" data-product1="Coffee 50% | Milk 50%"
+                            data-product2="$8.50">Order Now</button></span>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
@@ -20,7 +21,8 @@
                     <h4>Chai Latte</h4>
                     <p>Coffee 50% | Milk 50%</p>
                     <h5>$8.00</h5>
-                    <span><button>Order Now</button></span>
+                    <span><button class="buy-btn" data-product="Chai Latte" data-product1="Coffee 50% | Milk 50%"
+                            data-product2="$8.00">Order Now</button></span>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
@@ -29,7 +31,8 @@
                     <h4>Macchiato</h4>
                     <p>Coffee 50% | Milk 50%</p>
                     <h5>$9.30</h5>
-                    <span><button>Order Now</button></span>
+                    <span><button class="buy-btn" data-product="Macchiato" data-product1="Coffee 50% | Milk 50%"
+                            data-product2="$9.30">Order Now</button></span>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3">
@@ -38,8 +41,16 @@
                     <h4>Expresso</h4>
                     <p>Coffee 50% | Milk 50%</p>
                     <h5>$7.50</h5>
-                    <span><button>Order Now</button></span>
+                    <span><button class="buy-btn" data-product="Expresso" data-product1="Coffee 50% | Milk 50%"
+                            data-product2="$7.50">Order Now</button></span>
                 </div>
+            </div>
+            <div class="modal">
+                <h2>Your order</h2>
+                <h3 class="product-name"></h3>
+                <p class="product-description"></p>
+                <h5 class="product-price"></h5>
+                <button onclick="showMessage()" class="order-btn">Order!</button>
             </div>
         </div>
     </div>

@@ -1,4 +1,7 @@
+
 /* Mobile Menu */
+
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -34,8 +37,9 @@ let swiper = new Swiper(".mySwiper", {
   },
 });
 
-/* Scroll buttons */
 
+
+/* Scroll buttons */
 
 let ButtonHero = document.getElementById("btn_hero");
 
@@ -77,32 +81,86 @@ registrationFormWrapper.addEventListener('click', (event) => {
 });
 
 
+/* Validation Registration Form */
 
-var myButton = document.getElementById("discover__btn");
-var myPopup = document.getElementById("discover__popup");
-var closeButton = document.getElementById("discover__close_button");
+function validateForm() {
+  // Отримуємо значення полів форми
+  let name = document.forms[0]["name"].value;
+  let surname = document.forms[0]["surname"].value;
+  let email = document.forms[0]["email"].value;
+  let password = document.forms[0]["password"].value;
+
+  // Перевіряємо, чи були заповнені всі поля форми
+  if (name == "" || surname == "" || email == "" || password == "") {
+    alert("Please fill in all the fields of the form!");
+    return false;
+  }
+}
+
+
+
+/* Modal Window Button Learn More */
+
+let myButton = document.getElementById("discover__btn");
+let myPopup = document.getElementById("discover__popup");
+let closeButton = document.getElementById("discover__close_button");
 
 // показуємо вікно з інформацією при натисканні на кнопку
-myButton.addEventListener("click", function() {
+myButton.addEventListener("click", function () {
   myPopup.style.display = "block";
 });
 
 // закриваємо вікно при натисканні на кнопку "Закрити вікно"
-closeButton.addEventListener("click", function() {
+closeButton.addEventListener("click", function () {
   myPopup.style.display = "none";
 });
 
-myButton.addEventListener("click", function() {
+myButton.addEventListener("click", function () {
   myPopup.classList.add("show");
 });
 
 // закриваємо вікно при натисканні на кнопку "Закрити вікно"
-closeButton.addEventListener("click", function() {
+closeButton.addEventListener("click", function () {
   myPopup.classList.remove("show");
   myPopup.classList.add("hide");
-  
-  // зачекайте 0,3 секунди, поки анімація закінчиться, тоді приховайте вікно
-  setTimeout(function() {
+
+  // зачекайте 0,5 секунди, поки анімація закінчиться, тоді приховайте вікно
+  setTimeout(function () {
     myPopup.classList.remove("hide");
   }, 500);
 });
+
+
+
+/* Modal window for Menu*/
+
+// Отримуємо всі кнопки "Купити" та модальне вікно
+const buyButtons = document.querySelectorAll(".buy-btn");
+const modal = document.querySelector(".modal");
+const orderButton = modal.querySelector(".order-btn");
+const productName = modal.querySelector(".product-name");
+const productDescription = modal.querySelector(".product-description");
+const productPrice = modal.querySelector(".product-price");
+
+// Додаємо обробник події для кожної кнопки "Купити"
+buyButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    const product = button.getAttribute("data-product"); // Отримуємо ім'я товару з атрибута data-product
+    const product1 = button.getAttribute("data-product1"); // Отримуємо ім'я товару з атрибута data-product
+    const product2 = button.getAttribute("data-product2"); // Отримуємо ім'я товару з атрибута data-product
+    productName.textContent = `Name: ${product}`;
+    productDescription.textContent = `Description: ${product1}`; // Встановлюємо ім'я товару в модальне вікно
+    productPrice.textContent = `Price: ${product2}`; // Встановлюємо ім'я товару в модальне вікно
+    modal.classList.add("open"); // Відкриваємо модальне вікно
+  });
+});
+
+// Додаємо обробник події для кнопки "Замовити" у модальному вікні
+orderButton.addEventListener("click", function () {
+  // Тут можна додати код для обробки замовлення
+  modal.classList.remove("open"); // Закриваємо модальне вікно
+});
+
+function showMessage() {
+  alert("Congratulations! Accept your order! Wait for the call!");
+}
