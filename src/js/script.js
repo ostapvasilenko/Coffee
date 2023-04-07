@@ -134,7 +134,7 @@ closeButton.addEventListener("click", function () {
 
 /* Modal window for Menu*/
 
-// Отримуємо всі кнопки "Купити" та модальне вікно
+// Отримуємо всі кнопки "Order Now" та модальне вікно
 const buyButtons = document.querySelectorAll(".buy-btn");
 const modal = document.querySelector(".modal");
 const orderButton = modal.querySelector(".order-btn");
@@ -142,7 +142,7 @@ const productName = modal.querySelector(".product-name");
 const productDescription = modal.querySelector(".product-description");
 const productPrice = modal.querySelector(".product-price");
 
-// Додаємо обробник події для кожної кнопки "Купити"
+// Додаємо обробник події для кожної кнопки "Order Now"
 buyButtons.forEach(function (button) {
   button.addEventListener("click", function () {
     const product = button.getAttribute("data-product"); // Отримуємо ім'я товару з атрибута data-product
@@ -155,12 +155,31 @@ buyButtons.forEach(function (button) {
   });
 });
 
-// Додаємо обробник події для кнопки "Замовити" у модальному вікні
+// Додаємо обробник події для кнопки "Order!" у модальному вікні
 orderButton.addEventListener("click", function () {
   // Тут можна додати код для обробки замовлення
   modal.classList.remove("open"); // Закриваємо модальне вікно
 });
 
+
+/* Message to the user about a successful purchase */
 function showMessage() {
   alert("Congratulations! Accept your order! Wait for the call!");
 }
+
+
+/* Close Modal Window */
+
+let modalClose = document.getElementById("modal");
+let closeBtn = document.getElementsByClassName("close")[0];
+
+closeBtn.onclick = function () {
+  modalClose.style.display = "none";
+}
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modalClose.style.display = "none";
+  }
+}
+

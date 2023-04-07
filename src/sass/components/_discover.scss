@@ -55,6 +55,7 @@
         z-index: 10000;
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
+        overflow: auto;
 
         h2 {
             font-weight: 700;
@@ -79,10 +80,10 @@
             border: none;
             background: #F9C06A;
             border-radius: 24px;
-            position: absolute;
+            position: relative;
             left: 50%;
-            transform: translate(-50%);
-            bottom: 20px;
+            transform: translate(-50%, );
+            bottom: 0;
         }
     }
 
@@ -172,6 +173,17 @@
             margin-top: 70px;
             min-width: 100px;
             max-height: 200px;
+        }
+
+        #discover__popup {
+            h2 {
+                font-size: 30px;
+                line-height: 1.2;
+            }
+
+            p {
+                font-size: 16px;
+            }
         }
     }
 }
