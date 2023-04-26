@@ -1,11 +1,4 @@
 .hero {
-    height: 900px;
-    width: 100%;
-    background: linear-gradient(89.82deg, #1E1E1E -6.88%, rgba(0, 0, 0, 0) 87.45%), url('../img/hero-img.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
 
     &__info {
         position: absolute;
@@ -58,8 +51,6 @@
                 font-size: 160px;
                 line-height: 200px;
             }
-
-            p {}
         }
     }
 
